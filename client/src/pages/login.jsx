@@ -39,10 +39,12 @@ export default function Login() {
        setError(false);
        if(data.typeofuser==="Client"){
         console.log("alpha boom")
+        navigate("/clienthome");
        }
        else if(data.typeofuser==="Provider")
        {
         console.log("beta boom")
+        navigate("/providerhome");
        }
        else{
         console.log("omega boom")
